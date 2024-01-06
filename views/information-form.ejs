@@ -8,33 +8,34 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #663399; /* Purple background */
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      color: #fff; /* White text color */
+      height: 49vh;
     }
 
     h1 {
       text-align: center;
+      color: #333;
+      font-size: 50px;
     }
 
     form {
       max-width: 400px;
       width: 100%;
-      background-color: #8a2be2; /* Dark Violet form background */
+      background-color: #fff;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
 
     label {
       display: block;
       margin-bottom: 8px;
-      color: #fff; /* White label text color */
+      color: #333;
     }
 
     input {
@@ -47,30 +48,33 @@
     }
 
     button {
-      background-color: #4b0082; /* Indigo button background */
-      color: #fff; /* White button text color */
+      background-color: #4caf50;
+      color: #fff;
       padding: 10px 15px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       font-size: 16px;
+      transition: background-color 0.3s;
     }
 
     button:hover {
-      background-color: #800080; /* Purple button background on hover */
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  <h1>Enter Information</h1>
-  <form action="/submit-information" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+  <div class="container">
+    <h1>Enter Information</h1>
+    <form action="/submit-information" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-    <button type="submit">Submit</button>
-  </form>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>

@@ -2,7 +2,6 @@
   "scripts": {
     "start": "node app.js",
     "build-css": "node-sass public/styles/style.scss public/styles/style.css"
-  
   },
   "dependencies": {
     "ejs": "^3.1.9",
